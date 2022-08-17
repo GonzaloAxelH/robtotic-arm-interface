@@ -59,9 +59,12 @@
   border-radius: 50%;
   opacity: 0;
   cursor: pointer;
+  
 }
-
-.check:checked ~ i {
+.check-toggle:active ~ svg {
+  color: #1eabbe;
+}
+.check:checked ~ svg {
   color: #1eabbe;
 }
 
@@ -78,6 +81,66 @@ body {
 
 
 
+
+
+
+
+
+
+input[type="range"] { 
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 36px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 50px;
+   background:linear-gradient(50deg, #fff, #999);
+ 
+}
+
+
+::-webkit-slider-runnable-track {
+    
+  background:linear-gradient(50deg, #fff, #999);
+}
+
+::-moz-range-track {
+  background: #ddd;
+  height: 100%;
+  
+}
+
+::-moz-range-thumb {
+  -moz-appearance: none;
+    width: 34px; 
+    height: 34px;
+    border-radius: 50%;
+      background: #ddd;
+    box-shadow: 
+    .5px -.5px 1px 1px #fff,
+    -1px 1px 1px 1px #999,
+    -5px 8px 15px 1px #999;
+
+    border: 1px solid #999;
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 34px; 
+    height: 34px;
+    border-radius: 50%;
+     background: #1eabbe;
+     box-shadow: 
+    .5px -.5px 1px 1px #fff,
+    -1px 1px 1px 1px #999,
+    -5px 8px 15px 1px #999;
+    
+    border: none;
+}
+
+::-webkit-slider-runnable-track{}
 
 
 
